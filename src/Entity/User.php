@@ -7,6 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Component\Validator\Constraints\NotBlank;
 
 /**
  * @ORM\Entity(repositoryClass=UserRepository::class)
@@ -39,7 +40,8 @@ class User implements UserInterface
     private $password;
 
     /**
-     * * @Assert\Length(min= 1,max = 128,
+     * @Assert\NotNull(message="Votre nom est obligatoire")
+     * @Assert\Length(min= 1,max = 128,
      * minMessage="Veuillez renseigner 1 caractères",
      * maxMessage="Veuillez renseigner 128 caractères"
      * )
@@ -48,7 +50,7 @@ class User implements UserInterface
     private $name;
 
     /**
-     * * @Assert\Length(min= 1,max = 128,
+     * @Assert\Length(min= 1,max = 128,
      * minMessage="Veuillez renseigner 1 caractères",
      * maxMessage="Veuillez renseigner 128 caractères"
      * )

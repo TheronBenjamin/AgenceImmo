@@ -1,13 +1,24 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Register{% endblock %}
+{% block title %}S'inscrire {{ parent() }}{% endblock %}
 
 {% block body %}
-    <h1>Register</h1>
+    <div class="d-flex justify-content-center align-items-center flex-column mt-4">
+        <div class="d-flex justify-content-between align-items-center register-container">
+            <div class="register-text">
+                <h2 class="h2-form-title">S'inscrire</h2>
+                <p>
+                    En vous inscrivant, vous reconnaissez avoir pris connaissance
+                    et acceptez nos <a href="">conditions générales d'utilisation</a>.
 
-    {{ form_start(registrationForm) }}
-        {{ form_widget(registrationForm) }}
-
-        <button type="submit" class="btn btn-primary">S'enregistrer</button>
-    {{ form_end(registrationForm) }}
+                </p>
+            </div>
+            <div class="register-form">
+            {{ form_start(registrationForm) }}
+                {{ form_widget(registrationForm) }}
+                <button type="submit" class="btn btn-primary">S'enregistrer</button>
+            {{ form_end(registrationForm) }}
+            </div>
+        </div>
+    </div>
 {% endblock %}

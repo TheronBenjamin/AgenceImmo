@@ -34,7 +34,7 @@ class RegistrationFormType extends AbstractType
                 'label' => 'Téléphone',
             ])
             ->add('city', TextType::class,[
-                'label' => 'Ville'
+                'label' => 'Ville',
             ])
             ->add('agreeTerms', CheckboxType::class, [
                 'mapped' => false,
