@@ -1,0 +1,141 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select{margin:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+/**********************************/
+/************* Basics *************/
+/**********************************/
+html body{
+    background-color: #ffffff;
+    a:link{
+        text-decoration: none;
+    }
+
+    li{
+        list-style-type: none;
+    }
+}
+
+
+/************************************/
+/*********** header style ***********/
+/************************************/
+
+ul li a{
+    background-color: #ffffff;
+    color: #637e4d;
+    padding: 0.4rem 0.9rem 0.4rem 0.9rem;
+    border-radius: 4px;
+    transition: all 0.3s;
+    font-size: 1.2rem;
+    &:hover{
+        color: #ffffff;
+        background-color: #637e4d;
+    }
+}
+h1 a {
+    color: #ffffff;
+}
+
+
+div h1{
+    font-size: 1.6rem;
+    padding-top: 0.8rem;
+    a{
+        transition: all .3s;
+        &:hover{
+            color: #aba97f;
+        }
+    }
+}
+
+
+/******************************/
+/*********** Header ***********/
+/******************************/
+
+.header-background{
+    background-color: #1f733c;
+}
+
+footer{
+    background-color: #1f733c;
+    color: #ffffff;
+    margin-top: 3rem;
+    padding: 3rem;
+    ul:last-child{
+        margin-bottom: 0;
+    }
+}
+
+
+.register-form{
+    display: flex;
+    justify-content: center;
+    border-radius: 0px 7px 7px 0px;
+    width: 40vw;
+    padding-left: 0.8rem;
+    border-left: 1px solid #aba97f;
+    background-color: #ffffff;
+    label{
+        display: flex;
+        margin: 1.4rem 0rem 0.3rem 0rem;
+    }
+    input{
+        width: 35vw;
+        height: 45px;
+        border-radius: 20px;
+        border : 1px solid #aba97f;
+        outline-color: #3186da;
+        padding-left: 1rem;
+    }
+    .required:before{
+        content: '*';
+        color: red;
+    }
+    button{
+        display: block;
+        margin: auto;
+        width: 25vw;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding: 0.8rem 1.2rem 0.8rem 1.2rem;
+        background-color: #ffffff;
+        color: #19be26;
+        border: 1px solid #19be26;
+        border-radius: 40px;
+        transition: all .3s;
+        font-size: 1.4rem;
+        &:hover{
+            margin-top: 2rem;
+            background-color: #1f733c;
+            color: #ffffff;
+            border: 1px solid #1f733c;
+        }
+    }
+}
+
+.register-text{
+    display: block;
+    margin: auto;
+    width: 30vw;
+    color: #ffffff;
+    a{
+        color: #13d266;
+        &:hover{
+            color: #0fe56c;
+        }
+    }
+}
+
+.register-container{
+    width: 80vw;
+    height: 100%;
+    background-color: #184627;
+    border : 1px solid #1b4128;
+    border-radius: 7px;
+    box-shadow: 1px 10px 70px rgba(145, 145, 145, 0.1);
+    margin: 3rem
+}
+
+.h2-form-title{
+    margin: 2rem 0rem 2rem 0rem;
+}
