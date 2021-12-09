@@ -208,11 +208,11 @@ html body{
 .villa-group{
     .villa-card{
         box-shadow: 4px 40px 40px rgba(128, 128, 128, 0.16);
-        border-left: 1px solid rgba(40, 103, 69, 0.4);
-        border-right: 1px solid rgba(40, 103, 69, 0.4);
-        border-bottom: 1px solid rgba(40, 103, 69, 0.4);
+        border-left: 1px solid rgba(40, 103, 69, 0.5);
+        border-right: 1px solid rgba(40, 103, 69, 0.5);
+        border-bottom: 1px solid rgba(40, 103, 69, 0.5);
         background-color: white;
-        opacity: 0.96;
+        opacity: 0.93;
         border-radius: 5px;
         transition: transform 0.5s;
         .informations{
@@ -272,9 +272,9 @@ html body{
     }
     .villa-card:hover{
         background: linear-gradient(to top, #1f6973 10%, white 90%);
-        box-shadow: 1px 2px 6px rgba(154, 154, 154, 0.85);
+        box-shadow: 1px 2px 6px rgba(98, 98, 98, 0.85);
         opacity: 1;
-        transform: translateY(-1%);
+        transform: translateY(-2%);
         border-radius: 5px;
         .hidden-link {
             background-color: #1f5373;
