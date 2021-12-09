@@ -5,7 +5,7 @@
 /**********************************/
 html body{
     font-family: 'Dosis', sans-serif;
-    background-color: rgb(253, 253, 255);
+    background-color: rgb(252, 253, 255);
     a:link{
         text-decoration: none;
     }
@@ -208,11 +208,11 @@ html body{
 
 .villa-group{
     .villa-card{
-        box-shadow: 4px 40px 40px rgba(128, 128, 128, 0.2);
+        box-shadow: 4px 40px 40px rgba(128, 128, 128, 0.16);
         border: 1px solid rgba(40, 103, 69, 0.4);
         background-color: white;
-        opacity: 0.95;
-        border-radius: 3px;
+        opacity: 0.96;
+        border-radius: 5px;
         transition: transform 0.5s;
         .informations{
             color: black;
@@ -239,34 +239,46 @@ html body{
             font-weight: bold;
         }
         .text-blue{
-            color: #3186da;
+            background-color: #3186da;
+            color: white;
+            padding: 0.1rem 1rem 0.1rem 1rem;
+            border-radius: 4px;
+            border: 1px solid rgba(31, 83, 115, 0.35);
         }
         .text-good-title{
-            font-size: 1.4rem;
+            font-size: 1.1rem;
         }
         hr {
-            color: #034260;
+            color: rgb(39, 129, 173);
             z-index: 100;
             width: 29vw;
+            height: 2px;
             margin: 0;
         }
         p{
             font-size: 1.1rem;
+            &:first-child{
+                font-size: 1.2rem;
+            }
             &:last-child{
                 font-size: 1rem;
+            }
+            .villa-icon{
+                width: 16px;
+                height: 16px;
             }
         }
     }
     .villa-card:hover{
-        background: linear-gradient(to top, #1f6973 10%, white 100%);
-        box-shadow: 4px 50px 50px rgba(128, 128, 128, 0.55);
+        background: linear-gradient(to top, #1f6973 10%, white 90%);
+        box-shadow: 1px 2px 8px rgba(166, 166, 166, 0.6);
         opacity: 1;
         transform: translateY(-1%);
-        border-radius: 2px;
+        border-radius: 4px;
         .hidden-link {
             background-color: #1f5373;
             display: block;
-            border-radius: 2px;
+            border-radius: 4px;
         }
         .informations {
             background-color: white;
@@ -274,13 +286,13 @@ html body{
             transform: translateY(-35%);
         }
     }
-    img {
+    .img-good {
         max-width: 29vw;
         min-width: 29vw;
         min-height: 38vh;
         max-height: 38vh;
         z-index: 1;
-        border-radius: 2px 2px 0 0;
+        border-radius: 4px 4px 0 0;
     }
 }
 
