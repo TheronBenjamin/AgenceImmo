@@ -5,6 +5,7 @@
 /**********************************/
 html body{
     font-family: 'Dosis', sans-serif;
+    background-color: rgb(253, 253, 255);
     a:link{
         text-decoration: none;
     }
@@ -13,7 +14,7 @@ html body{
         list-style-type: none;
     }
 
-    .marger{
+    .search-and-sell{
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -22,6 +23,7 @@ html body{
             width: 70vw;
         }
     }
+
     .link{
         display: flex;
         margin: auto;
@@ -39,9 +41,9 @@ html body{
         &:hover{
             margin-top: 2rem;
             color: #ffffff;
-            box-shadow: inset 12vw 0 0 0 #1f733c;
+            box-shadow: inset 12vw 0 0 0 #1c833f;
             background-color: #FFFFFF;
-            border: 1px solid #1f733c;
+            border: 1px solid #1c833f;
         }
         &:focus{
             background-color: #1f733c;
@@ -166,9 +168,9 @@ html body{
         &:hover{
             margin-top: 2rem;
             color: #ffffff;
-            box-shadow: inset 25vw 0 0 0 #1f733c;
+            box-shadow: inset 25vw 0 0 0 #1c833f;
             background-color: #FFFFFF;
-            border: 1px solid #1f733c;
+            border: 1px solid #1c833f;
         }
         &:focus{
             background-color: #1f733c;
@@ -206,11 +208,11 @@ html body{
 
 .villa-group{
     .villa-card{
-        box-shadow: 4px 40px 40px rgba(128, 128, 128, 0.12);
-        border: 1px solid rgba(40, 103, 69, 0.25);
+        box-shadow: 4px 40px 40px rgba(128, 128, 128, 0.2);
+        border: 1px solid rgba(40, 103, 69, 0.4);
         background-color: white;
-        opacity: 0.96;
-        border-radius: 4px;
+        opacity: 0.95;
+        border-radius: 3px;
         transition: transform 0.5s;
         .informations{
             color: black;
@@ -226,24 +228,45 @@ html body{
             padding-top: -30px;
             display: unset;
             color: white;
-            transition: display .5s;
+            transition: display ease .5s;
             .discover-link{
                 display: block;
                 margin-bottom: 1rem;
                 margin-top: -2rem;
             }
         }
+        .fw-bold {
+            font-weight: bold;
+        }
+        .text-blue{
+            color: #3186da;
+        }
+        .text-good-title{
+            font-size: 1.4rem;
+        }
+        hr {
+            color: #034260;
+            z-index: 100;
+            width: 29vw;
+            margin: 0;
+        }
+        p{
+            font-size: 1.1rem;
+            &:last-child{
+                font-size: 1rem;
+            }
+        }
     }
     .villa-card:hover{
         background: linear-gradient(to top, #1f6973 10%, white 100%);
-        box-shadow: 3px 15px 15px rgba(128, 128, 128, 0.45);
+        box-shadow: 4px 50px 50px rgba(128, 128, 128, 0.55);
         opacity: 1;
-        transform: translateY(-2%);
-        border-radius: 4px;
+        transform: translateY(-1%);
+        border-radius: 2px;
         .hidden-link {
             background-color: #1f5373;
             display: block;
-            border-radius: 4px;
+            border-radius: 2px;
         }
         .informations {
             background-color: white;
@@ -252,12 +275,13 @@ html body{
         }
     }
     img {
-        max-width: 27vw;
-        min-width: 27vw;
-        min-height: 40vh;
-        max-height: 40vh;
+        max-width: 29vw;
+        min-width: 29vw;
+        min-height: 38vh;
+        max-height: 38vh;
         z-index: 1;
-        border-radius: 4px 4px 0 0;
+        border-radius: 2px 2px 0 0;
     }
 }
+
 
