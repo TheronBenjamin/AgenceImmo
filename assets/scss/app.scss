@@ -37,6 +37,7 @@ html body{
         border: 1px solid #19be26;
         border-radius: 40px;
         font-size: 1.1rem;
+        font-weight: 300;
         box-shadow: inset 0 0 0 0 #1f733c;
         transition: box-shadow ease-in .3s, color ease-in .3s, border .3s;
         &:hover{
@@ -164,6 +165,7 @@ html body{
         border: 1px solid #19be26;
         border-radius: 40px;
         font-size: 1.2rem;
+        font-weight: 300;
         box-shadow: inset 0 0 0 0 #1f733c;
         transition: box-shadow ease-in .3s, color ease-in .4s;
         &:hover{
@@ -256,7 +258,7 @@ html body{
             border: 1px solid rgba(26, 166, 87, 0.35);
         }
         .text-brown{
-            background-color: #a6501a;
+            background-color: #e5650a;
             color: white;
             padding: 0.1rem 1rem 0.1rem 1rem;
             border-radius: 6px;
@@ -288,7 +290,7 @@ html body{
     }
     .villa-card:hover{
         background: linear-gradient(to top, #1f6973 70%, white 90%);
-        box-shadow: 1px 2px 6px rgba(143, 143, 143, 0.85);
+        box-shadow: 1px 2px 6px rgba(147, 147, 147, 0.85);
         opacity: 1;
         transform: translateY(-2%);
         border-radius: 5px;
