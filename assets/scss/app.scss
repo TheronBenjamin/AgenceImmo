@@ -284,11 +284,13 @@ html body{
         opacity: 0.93;
         border-radius: 5px;
         transition: transform 0.5s;
+        --webkit-backface-visibility: hidden;
         .informations{
             color: black;
             background-color: $white;
             transition: background-color ease-in 10s , transform 0.6s;
             z-index:2;
+            --webkit-backface-visibility: hidden;
             p:first-child{
                 padding-top: 0.5rem;
             }
@@ -299,6 +301,7 @@ html body{
             display: unset;
             color: $white;
             transition: display ease .5s;
+            --webkit-backface-visibility: hidden;
             .discover-link{
                 display: block;
                 margin-bottom: 1rem;
