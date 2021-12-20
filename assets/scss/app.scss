@@ -161,6 +161,9 @@ html body{
           text-decoration: none;
         }
     }
+    hr{
+        color: $light-blue;
+    }
     ul:last-child{
         margin-bottom: 0;
     }
@@ -185,6 +188,7 @@ html body{
                 background: $light-blue;
                 border-radius: 3px;
                 animation: moving 2s linear infinite;
+                --webkit-animation: 0;
             }
         }
     }
