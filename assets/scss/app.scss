@@ -44,6 +44,7 @@ html body{
     font-family: 'Murecho', sans-serif;
     a:link{
         text-decoration: none;
+
     }
 
     li{
@@ -89,13 +90,14 @@ html body{
     .footer-links {
         a {
             color: $white;
+            font-size: 0.9rem;
             &:hover{
                 text-decoration: underline;
-                color: $white;
+                color: $light-blue;
             }
         }
         li:first-child{
-            margin-top: 1rem;
+            margin-top: 0.6rem;
         }
         li{
             margin-bottom: 0.3rem;
@@ -153,16 +155,38 @@ html body{
     color: $white;
     margin-top: 5rem;
     padding: 4rem 4rem 1rem 4rem;
-    border-top-left-radius: 20%;
+    border-top-left-radius: 80px;
+    a{
+        &:hover{
+          text-decoration: none;
+        }
+    }
     ul:last-child{
         margin-bottom: 0;
     }
-    span{
+    h2, h3{
         padding-left: 2rem;
-        margin-bottom: 4rem;
+        font-size: 1rem;
         font-weight: bold;
         color: $light-blue;
         text-shadow: 0px 1px 1px $black;
+        .underline{
+            position: relative;
+            max-width: 100%;
+            height: 4px;
+            background-color: $mid-blue;
+            border-radius: 3px;
+            margin-top: 6px;
+            overflow: hidden;
+            span{
+                position: absolute;
+                width: 25px;
+                height: 100%;
+                background: $light-blue;
+                border-radius: 3px;
+                animation: moving 2s linear infinite;
+            }
+        }
     }
 }
 
@@ -352,4 +376,11 @@ html body{
     }
 }
 
+@keyframes moving {
+    0%{
+        left:-30px;
+    }
+    100%{
+        left:100%;    }
+}
 
