@@ -91,6 +91,7 @@ html body{
         a {
             color: $white;
             font-size: 0.9rem;
+            transition: all .3s;
             &:hover{
                 text-decoration: underline;
                 color: $light-blue;
@@ -188,7 +189,6 @@ html body{
                 background: $light-blue;
                 border-radius: 3px;
                 animation: moving 2s linear infinite;
-                --webkit-animation: 0;
             }
         }
     }
@@ -275,6 +275,7 @@ html body{
 }
 
 .villa-group{
+    backface-visibility: hidden;
     .villa-card{
         box-shadow: 4px 40px 40px $mid-grey;
         border-left: 1px solid $opaque-green;
