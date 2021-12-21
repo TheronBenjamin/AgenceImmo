@@ -361,7 +361,7 @@ html body{
     .villa-card:hover{
         background: linear-gradient(to top, $sea-green 70%, $white 90%);
         box-shadow: 1px 2px 6px $light-grey;
-        opacity: 1;
+        opacity: 0.999;
         transform: translateY(-2%);
         border-radius: 5px;
         .hidden-link {
