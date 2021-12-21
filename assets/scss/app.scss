@@ -76,7 +76,7 @@ html body{
         font-size: 1.1rem;
         font-weight: 300;
         box-shadow: inset 0 0 0 0 $medium-green;
-        transition: box-shadow ease-in .2s, color ease-in .2s, border .2s;
+        transition: box-shadow ease-in .3s, color ease-in .3s, border .3s;
         &:hover{
             margin-top: 2rem;
             color: $white;
@@ -186,10 +186,11 @@ html body{
             span{
                 position: absolute;
                 width: 25px;
-                height: 100%;
+                height: 4px;
                 background: $light-blue;
                 border-radius: 3px;
-                animation: moving 2s linear infinite;
+                animation: moving 2s ease-in-out infinite alternate;
+                transform: translateZ(0);
             }
         }
     }
@@ -388,8 +389,10 @@ html body{
 @keyframes moving {
     0%{
         left:-30px;
+        transform: translateZ(0);
     }
     100%{
-        left:100%;    }
+        left:103%;   
+    transform: translateZ(0); }
 }
 
