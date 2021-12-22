@@ -5,18 +5,21 @@
 {% block body %}
 
     <div class="header-card">
-        <div class="d-flex justify-content-between me-3 ms-3">
+        <div class="d-flex justify-content-between align-items-center flex-wrap me-3 ms-3">
             <div>
                 <h2 class="h2-title mt-0 p-3">
                     <i class="fas fa-street-view"></i>
                     Achetez, louez, le bien
                     <div class="ms-3">qui vous correspond</div>
                 </h2>
-            <div class="d-flex flex-column">
-                <p class="ms-3"><i class="fas fa-building"></i> | Appartements </p>
-                <p class="ms-3"><i class="fas fa-home"></i> | Maisons</p>
-                <p class="ms-3"><i class="fas fa-mosque"></i> | Villas</p>
+                <div class="d-flex flex-column">
+                    <p class="ms-3"><i class="fas fa-building"></i> | Appartements </p>
+                    <p class="ms-3"><i class="fas fa-home"></i> | Maisons</p>
+                    <p class="ms-3"><i class="fas fa-mosque"></i> | Villas</p>
+                </div>
             </div>
+            <div class="logo">
+                K
             </div>
             <div>
                 <a class="link me-5" href="#">Vendre son bien</a>
@@ -24,7 +27,7 @@
         </div>
     </div>
     <div class="ms-3">
-        <div class="search-and-sell">
+        <div class="search-and-sell d-flex justify-content-center align-items-center flex-wrap ">
             <input type="text" placeholder="Localisation">
             <input type="text" placeholder="Type de bien">
             <input type="text" placeholder="Prix">
@@ -32,8 +35,8 @@
         </div>
     </div>
     <div class="ms-4">
-        <div class="villa-group d-flex justify-content-center align-items-center mb-5 flex-wrap">
-            <div class="me-4 villa-card">
+        <div class="villa-group d-flex justify-content-center align-items-center flex-wrap">
+            <div class="me-4 villa-card d-flex align-items-stretch">
                 <a class="hidden-link" href="#">
                     <p class="d-flex justify-content-start ms-3 mb-2 mt-1 good-type">
                         <span class="ftw-bold text-brown text-good-title me-2">

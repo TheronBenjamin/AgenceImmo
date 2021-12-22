@@ -43,8 +43,7 @@ $black: #000000;
 html body{
     font-family: 'Murecho', sans-serif;
     h1{
-        margin-top: -1.6rem;
-
+        margin-top: -1.5rem;
         span{
             font-size: 4rem;
             color: $light-blue;
@@ -61,15 +60,12 @@ html body{
     }
 
     .search-and-sell{
-        position: relative;
-        display: flex;
-        justify-content: center;
         margin-top: -4vh;
-        margin-bottom: 4rem;
+        margin-bottom: 5rem;
         input{
-            padding-left: .7rem;
-            width: 21vw;
-            height: 8vh;
+            padding: 1rem;
+            min-width: 280px;
+            max-width: 14vw;
             border: 1px solid $white;
             border-right: 1px solid $light-grey;
             outline-color: $clear-blue;
@@ -81,13 +77,14 @@ html body{
             &:first-child{
             }
             &:nth-child(3){
-                width: 14vw;
+                min-width: 200px;
+                max-width: 14vw;
             }
         }
         button{
+            padding: 1rem;
             margin-top: -.5px;
-            height: 8.2vh;
-            width: 14vw;
+            min-width: 14vw;
             font-size: 1.2rem;
             color: $light-blue;
             background-color: $sea-blue;
@@ -95,7 +92,7 @@ html body{
             border: 1px solid $mid-blue;
             border-radius: 20%;
             box-shadow: inset 0 0 0 0 $light-blue, 0px 3px 8px $light-grey;
-            transition: box-shadow ease-in .4s, color ease-in .5s;
+            transition: box-shadow ease-in .3s, color ease-in .3s;
             &:hover {
                 color: $white;
                 box-shadow: inset 25vw 0 0 0 $clear-blue, 0px 3px 8px $light-grey;
@@ -219,12 +216,15 @@ html body{
 }
 
 .header-card{
-    min-height: 50vh;
+    min-height: 320px;
+    max-height: 100vh;
     background: linear-gradient(to bottom, $sea-blue 5%, $sea-green 100%);
     margin: 0;
     padding: 0;
     border-bottom-right-radius: 80px;
+    border-top: $sea-blue;
     .h2-title{
+        font-size: 1.8rem;
         color: $light-blue;
         position: absolute;
     }
@@ -242,6 +242,13 @@ html body{
             margin-top: 8rem;
         }
     }
+    .logo{
+        font-size: 10rem;
+        color: $light-blue;
+        margin-left: 3rem;
+        margin-top: -3rem;
+        text-shadow: 0px 2px 1px $white;
+    }
 }
 
 
@@ -252,7 +259,7 @@ html body{
 .footer{
     background-color: $sea-blue;
     color: $white;
-    margin-top: 5rem;
+    margin-top: 3rem;
     padding: 4rem 4rem 1rem 4rem;
     border-top-left-radius: 80px;
     h1{
@@ -398,7 +405,7 @@ html body{
     }
     .villa-card{
         position: relative;
-        margin-bottom: 2rem;
+        margin-bottom: 2.5rem;
         box-shadow: 4px 40px 40px $mid-grey;
         border-left: 1px solid $opaque-green;
         border-right: 1px solid $opaque-green;
@@ -468,7 +475,7 @@ html body{
         p{
             font-size: 1rem;
             &:first-child{
-                font-size: 1.1rem;
+                font-size: 1rem;
                 font-weight: 500;
             }
             &:last-child{
@@ -500,10 +507,9 @@ html body{
         }
     }
     .img-good {
-        max-width: 29vw;
-        min-width: 29vw;
-        min-height: 35vh;
-        max-height: 35vh;
+        width: 29vw;
+        max-height: 230px;
+        min-height: 230px;
         z-index: 1;
         border-radius: 5px 5px 0 0;
         transition: transform ease .5s;
@@ -526,4 +532,20 @@ html body{
 }
 
 
+@media screen and (max-width: 720px){
+    html body {
+        .villa-group {
+            .villa-card{
+                .hr{
 
+                }
+            }
+            .img-good {
+                min-width: 45vw;
+                max-width: 45vw;
+                min-height: 30vw;
+                max-height: 30vw;
+            }
+        }
+    }
+}
