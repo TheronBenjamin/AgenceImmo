@@ -65,36 +65,46 @@ html body{
         display: flex;
         justify-content: center;
         margin-top: -4vh;
-        margin-bottom: 5rem;
+        margin-bottom: 4rem;
         input{
             padding-left: .7rem;
             width: 21vw;
             height: 8vh;
             border: 1px solid $white;
-            border-right: 1px solid $sea-blue;
+            border-right: 1px solid $light-grey;
             outline-color: $clear-blue;
             box-shadow: 3px 1px 10px 1px $light-grey;
-            border-radius: 17%;
+            border-radius: 20%;
             &::placeholder{
                 color: $sea-blue;
+            }
+            &:first-child{
             }
             &:nth-child(3){
                 width: 14vw;
             }
         }
         button{
-            margin-top: -0.1rem;
-            height: 9vh;
+            margin-top: -.5px;
+            height: 8.2vh;
             width: 14vw;
             font-size: 1.2rem;
             color: $light-blue;
             background-color: $sea-blue;
             outline-color: $clear-blue;
             border: 1px solid $mid-blue;
-            border-radius: 21%;
-            box-shadow: 0px 6px 12px $light-grey;
+            border-radius: 20%;
+            box-shadow: inset 0 0 0 0 $light-blue, 0px 3px 8px $light-grey;
+            transition: box-shadow ease-in .4s, color ease-in .5s;
+            &:hover {
+                color: $white;
+                box-shadow: inset 25vw 0 0 0 $clear-blue, 0px 3px 8px $light-grey;
+                background-color: $sea-blue;
+                border: 1px solid $mid-light-blue;
+            }
         }
     }
+
 
     .link{
         display: flex;
@@ -222,6 +232,9 @@ html body{
         position: relative;
         margin-bottom: 1rem;
         color: $white;
+        transition: color .3s;
+        cursor: pointer;
+        text-shadow: 0px 0px 2px $dark-blue;
         &:hover{
             color: $light-blue;
         }
