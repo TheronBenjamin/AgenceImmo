@@ -82,7 +82,7 @@ html body{
             }
         }
         button{
-            padding: .9rem;
+            padding: .8rem;
             margin-top: -.5px;
             min-width: 14vw;
             font-size: 1.2rem;
@@ -400,6 +400,7 @@ html body{
         position: absolute;
         top: 1vh;
         z-index: 200;
+        backface-visibility: hidden;
     }
     .villa-card{
         position: relative;
@@ -410,7 +411,7 @@ html body{
         border-bottom: 1px solid $opaque-blue;
         background-color: $white;
         opacity: 0.93;
-        border-radius: 5px;
+        border-radius: 3px;
         transition: transform 0.5s;
         backface-visibility: hidden;
         .informations{
@@ -434,6 +435,7 @@ html body{
                 display: block;
                 margin-bottom: 1rem;
                 margin-top: -2rem;
+                backface-visibility: hidden;
             }
         }
         .ftw-bold {
@@ -489,11 +491,11 @@ html body{
         background: linear-gradient(to top, $sea-green 70%, $white 90%);
         box-shadow: 1px 2px 7px $light-grey;
         opacity: 0.999;
-        border-radius: 5px;
+        border-radius: 3px;
         .hidden-link {
             background-color: $mid-blue;
             display: block;
-            border-radius: 5px;
+            border-radius: 3px;
         }
         .informations {
             background-color: $white;
@@ -509,7 +511,7 @@ html body{
         max-height: 235px;
         min-height: 235px;
         z-index: 1;
-        border-radius: 5px 5px 0 0;
+        border-radius: 3px 3px 0 0;
         transition: transform ease .5s;
     }
     .good-descritpion{
