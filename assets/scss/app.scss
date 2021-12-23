@@ -244,6 +244,7 @@ html body{
     }
     .client-header{
         .logo, .flag{
+            position: relative;
             z-index: 2;
             position: relative;
             margin-top: -2rem;
@@ -252,9 +253,12 @@ html body{
         }
         .circle{
             position: absolute;
-            left: 42.3%;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
             z-index: 1;
-            border: 2px solid $light-blue;
+            border: 4px solid $mid-light-blue;
             width: 200px;
             height: 200px;
             border-radius: 50%;
@@ -610,8 +614,8 @@ html body{
 
 @keyframes moving-circle{
     0%{
-        width: 10px;
-        height: 10px;
+        width: 5px;
+        height: 5px;
         transform: translateX(-100%);
         -webkit-transform: translateX(-100%);
         -moz-transform: translateX(-100%);
