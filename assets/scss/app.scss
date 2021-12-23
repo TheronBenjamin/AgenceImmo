@@ -93,7 +93,11 @@ html body{
             border-radius: 1px;
             box-shadow: inset 0 0 0 0 $clear-blue, 0px 3px 8px $light-grey;
             transition: box-shadow ease-in .3s, color ease-in .3s;
-            &:hover {
+            -webkit-transition: box-shadow ease-in .3s, color ease-in .3s;
+            -moz-transition: box-shadow ease-in .3s, color ease-in .3s;
+            -ms-transition: box-shadow ease-in .3s, color ease-in .3s;
+            -o-transition: box-shadow ease-in .3s, color ease-in .3s;
+            &:hover{
                 color: $white;
                 box-shadow: inset 25vw 0 0 0 $clear-blue, 0px 3px 8px $light-grey;
                 background-color: $sea-blue;
@@ -115,6 +119,10 @@ html body{
         font-weight: 300;
         box-shadow: inset 0 0 0 0 $sea-blue;
         transition: box-shadow ease-in .3s, color ease-in .3s, border .3s;
+        -webkit-transition: box-shadow ease-in .3s, color ease-in .3s, border .3s;
+        -moz-transition: box-shadow ease-in .3s, color ease-in .3s, border .3s;
+        -ms-transition: box-shadow ease-in .3s, color ease-in .3s, border .3s;
+        -o-transition: box-shadow ease-in .3s, color ease-in .3s, border .3s;
         &:hover{
             color: $white;
             box-shadow: inset 14vw 0 0 0 $mid-blue;
@@ -173,6 +181,10 @@ html body{
         padding-top: 0.8rem;
         a{
             transition: all .3s;
+            -webkit-transition: all .3s;
+            -moz-transition: all .3s;
+            -ms-transition: all .3s;
+            -o-transition: all .3s;
             &:hover{
                 color: $sand;
             }
@@ -227,12 +239,26 @@ html body{
     .logo{
         font-size: 10rem;
         text-align: center;
-        color: $light-blue;
+        color: $white;
         text-shadow: 0px 2px 1px $white;
     }
     .client-header{
         .logo, .flag{
-        margin-top: -4.5rem;
+            z-index: 2;
+            position: relative;
+            margin-top: -2rem;
+            animation: color-logo 3s ease-in-out;
+            text-shadow: 4px 4px 1px $clear-blue;
+        }
+        .circle{
+            position: absolute;
+            left: 42.3%;
+            z-index: 1;
+            border: 2px solid $light-blue;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            animation: moving-circle 3s ease-in-out;
         }
     }
 }
@@ -287,7 +313,11 @@ html body{
                 border-radius: 3px;
                 animation: moving 2s ease-in-out infinite alternate;
                 transform: translateZ(0);
-            }
+                -webkit-transform: translateZ(0);
+                -moz-transform: translateZ(0);
+                -ms-transform: translateZ(0);
+                -o-transform: translateZ(0);
+}
         }
     }
 }
@@ -335,6 +365,10 @@ html body{
         font-weight: 400;
         box-shadow: inset 0 0 0 0 $medium-green;
         transition: box-shadow ease-in .3s, color ease-in .4s;
+        -webkit-transition: box-shadow ease-in .3s, color ease-in .4s;
+        -moz-transition: box-shadow ease-in .3s, color ease-in .4s;
+        -ms-transition: box-shadow ease-in .3s, color ease-in .4s;
+        -o-transition: box-shadow ease-in .3s, color ease-in .4s;
         &:hover{
             margin-top: 2rem;
             color: $white;
@@ -387,8 +421,13 @@ html body{
     grid-gap: 5px;
     margin: 2rem;
     transition: transform 0.5s;
+    transition-delay: 1ms;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -ms-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
     backface-visibility: hidden;
-    .good-type{
+        .good-type{
         position: absolute;
         top: 1vh;
         z-index: 200;
@@ -405,11 +444,23 @@ html body{
         opacity: 0.93;
         border-radius: 3px;
         transition: transform 0.5s;
+        transition-delay: 1ms;
+        -webkit-transition: transform 0.5s;
+        -moz-transition: transform 0.5s;
+        -ms-transition: transform 0.5s;
+        -o-transition: transform 0.5s;
         backface-visibility: hidden;
-        .informations{
+            .informations{
             color: black;
             background-color: $white;
-            transition: background-color ease-in 10s , transform 0.6s;
+            transition: background-color ease-in 10s;
+            transition-delay: 1ms;
+            transition: transform 0.6s;
+            transition-delay: 1ms;
+            -webkit-transition: background-color ease-in 10s , transform 0.6s;
+            -moz-transition: background-color ease-in 10s , transform 0.6s;
+            -ms-transition: background-color ease-in 10s , transform 0.6s;
+            -o-transition: background-color ease-in 10s , transform 0.6s;
             z-index:2;
             backface-visibility: hidden;
             p:first-child{
@@ -422,12 +473,18 @@ html body{
             display: unset;
             color: $white;
             transition: display ease .5s;
+            transition-delay: 1ms;
+            -webkit-transition: display ease .5s;
+            -moz-transition: display ease .5s;
+            -ms-transition: display ease .5s;
+            -o-transition: display ease .5s;
             backface-visibility: hidden;
             .discover-link{
                 display: block;
                 margin-bottom: 1rem;
                 margin-top: -2rem;
                 backface-visibility: hidden;
+                transition-delay: 1ms;
             }
         }
         .ftw-bold {
@@ -491,12 +548,29 @@ html body{
         }
         .informations {
             background-color: $white;
-            transition: background-color  ease-out .1s, transform 0.7s;
+            transition:transform 0.7s;
+            transition-delay: 1ms;
+            transition: background-color ease-out .1s;
+            transition-delay: 1ms;
+            -webkit-transition: background-color  ease-out .1s;-webkit-transition: transform 0.7s;
+            -moz-transition: background-color  ease-out .1s;-moz-transition: transform 0.7s;
+            -ms-transition: background-color  ease-out .1s; -ms-transition: transform 0.7s;
+            -o-transition: background-color  ease-out .1s; -o-transition: transform 0.7s;
             transform: translateY(-18%);
-        }
+            transition-delay: 1ms;
+            -webkit-transform: -webkit-translateY(-18%);
+            -moz-transform: translateY(-18%);
+            -ms-transform: translateY(-18%);
+            -o-transform: translateY(-18%);
+}
         .img-good{
             transform: translateY(-2%);
-        }
+            transition-delay: 1ms;
+            -webkit-transform: translateY(-2%);
+            -moz-transform: translateY(-2%);
+            -ms-transform: translateY(-2%);
+            -o-transform: translateY(-2%);
+}
     }
     .img-good {
         width:  100%;
@@ -505,7 +579,12 @@ html body{
         z-index: 1;
         border-radius: 3px 3px 0 0;
         transition: transform ease .5s;
-    }
+        transition-delay: 1ms;
+        -webkit-transition: transform ease .5s;
+        -moz-transition: transform ease .5s;
+        -ms-transition: transform ease .5s;
+        -o-transition: transform ease .5s;
+}
     .good-descritpion{
         width: 90%;
         text-align: justify;
@@ -515,14 +594,52 @@ html body{
 @keyframes moving {
     0%{
         transform: translateX(-5px);
-    }
+        -webkit-transform: translateX(-5px);
+        -moz-transform: translateX(-5px);
+        -ms-transform: translateX(-5px);
+        -o-transform: translateX(-5px);
+}
     100%{
-      
     transform: translateX(940%);
+    -webkit-transform: translateX(940%);
+    -moz-transform: translateX(940%);
+    -ms-transform: translateX(940%);
+    -o-transform: translateX(940%);
     }
 }
 
+@keyframes moving-circle{
+    0%{
+        width: 10px;
+        height: 10px;
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+    }
+    100%{
+        width: 200px;
+        height: 200px;
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+    }
+}
 
+@keyframes color-logo{
+    0%{
+        color: $white;
+    }
+    40%{
+        color: $light-blue;
+    }
+    100%{
+        color: $white;
+    }
+}
 
 
 @media screen and (max-width: 800px) {
