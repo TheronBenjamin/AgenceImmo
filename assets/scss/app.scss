@@ -5,7 +5,7 @@
 /************* Colors *************/
 /**********************************/
 
-$white: #FFFFFF;
+$white: #ffffff;
 $flashy-green: #0fe56c;
 $flash-green: #13d266;
 $light-green: #19be26;
@@ -106,7 +106,6 @@ html body{
         }
     }
 
-
     .link{
         margin-bottom: 2rem;
         justify-content: center;
@@ -134,7 +133,7 @@ html body{
         }
     }
     .footer-links li{
-        margin-bottom: 0.3rem;
+        margin-bottom: 0.4rem;
         &:last-child{
             margin-bottom: 2rem;
         }
@@ -144,12 +143,11 @@ html body{
         a{
             font-size: .9rem;
             position: relative;
-            color: $white;
+            color: $mid-light-blue;
             border-radius: 4px;
             transition: color .3s;
             &:hover{
-                color: $white;
-                text-shadow: 0px 0px 1px $light-blue;
+                color: $mid-light-blue;
             }
             .underline {
                 position: absolute;
@@ -159,7 +157,6 @@ html body{
                 transition: box-shadow linear .7s;
             }
         }
-
     }
 }
 
@@ -273,25 +270,31 @@ html body{
 
 .footer{
     position: relative;
-    background-color: $sea-blue;
+    background-color: $white;
     color: $white;
-    padding: 4rem 4rem 1rem 4rem;
+    border-top: 4px ridge $clear-blue;
+    .test{
+        padding: 4rem 4rem 1rem 4rem;
+        border-bottom: 3px ridge $clear-blue;
+        border-top: 3px ridge $light-blue;
+
+    }
     .logo{
         position: relative;
-        font-size: 10rem;
+        font-size: 7rem;
         text-align: center;
         color: $sea-blue;
-        margin-top: -14.2rem;
+        margin-top: -10.5rem;
         text-shadow: 2px 4px 2px $mid-light-blue;
     }
     .circle{
-        margin-top: -1.8rem;
+        margin-top: -1.2rem;
         position: relative ;
         z-index: 0;
         background: linear-gradient(to right, $light-blue, $mid-grey);
         padding: 3px;
-        width: 190px;
-        height: 190px;
+        width: 160px;
+        height: 160px;
         border-radius: 50%;
     }
     a{
@@ -309,8 +312,8 @@ html body{
         padding-left: 2rem;
         font-size: 1rem;
         font-weight: bold;
-        color: $light-blue;
-        text-shadow: 0px 1px 1px $black;
+        color: $mid-blue;
+        text-shadow: 0px 1px 1px $light-blue;
         .underline{
             position: relative;
             max-width: 100%;
@@ -333,6 +336,13 @@ html body{
                 -o-transform: translateZ(0);
             }
         }
+    }
+    .border-style{
+        border-bottom: 4px ridge $light-blue;
+    }
+    p{
+        color: $mid-light-blue;
+        text-shadow: 0px 0px 1px $light-blue;
     }
 }
 
