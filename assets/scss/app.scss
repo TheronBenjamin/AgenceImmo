@@ -22,6 +22,7 @@ $clear-blue: #3186da;
 $mid-light-blue: rgb(39, 129, 173);
 $mid-blue: #1f5373;
 $sea-blue: #034260;
+$full-blue: #033660;
 $dark-blue: rgba(19, 60, 89, 0.93);
 $opaque-blue: rgba(31, 83, 115, 0.35);
 $orange: #e5650a;
@@ -141,7 +142,8 @@ html body{
             box-shadow: inset 25vw 0 0 0 $light-blue;
         }
         a{
-            font-size: .9rem;
+            font-size: 1rem;
+            font-weight: 300;
             position: relative;
             color: $mid-light-blue;
             border-radius: 4px;
@@ -272,11 +274,11 @@ html body{
     position: relative;
     background-color: $white;
     color: $white;
-    border-top: 4px ridge $clear-blue;
+    border-top: 1px ridge $clear-blue;
     .test{
         padding: 4rem 4rem 1rem 4rem;
-        border-bottom: 3px ridge $clear-blue;
-        border-top: 3px ridge $light-blue;
+        border-bottom: 1px ridge $clear-blue;
+        border-top: 1px ridge $light-blue;
 
     }
     .logo{
@@ -291,7 +293,7 @@ html body{
         margin-top: -1.2rem;
         position: relative ;
         z-index: 0;
-        background: linear-gradient(to right, $light-blue, $mid-grey);
+        background: linear-gradient(to right, $light-blue, $full-blue);
         padding: 3px;
         width: 160px;
         height: 160px;
@@ -311,7 +313,7 @@ html body{
     h2, h3{
         padding-left: 2rem;
         font-size: 1rem;
-        font-weight: bold;
+        font-weight: 300;
         color: $mid-blue;
         text-shadow: 0px 1px 1px $light-blue;
         .underline{
@@ -338,10 +340,11 @@ html body{
         }
     }
     .border-style{
-        border-bottom: 4px ridge $light-blue;
+        border-bottom: 1px ridge $light-blue;
     }
     p{
         color: $mid-light-blue;
+        font-weight: 200;
         text-shadow: 0px 0px 1px $light-blue;
     }
 }
