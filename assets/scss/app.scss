@@ -471,11 +471,19 @@ html body{
 /*********** Good cards ***********/
 /**********************************/
 
+
+.page-container{
+    width: 85vw;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
 .villa-group{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(295px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(310px,1fr));
     grid-gap: 5px;
-    margin: 2rem 2rem 0rem 2rem;
+    margin: 2rem 0rem 0rem 2rem;
     transition: transform 0.5s;
     transition-delay: 1ms;
     -webkit-transition: transform 0.5s;
@@ -662,12 +670,12 @@ html body{
     .informations-block{
         margin: 0rem 2rem 2rem 2rem;
         img{
-            height: 270px;
+            height: 220px;
             width: 50%;
             z-index: -4;
         }
         .block{
-            height: 270px;
+            height: 220px;
             z-index: 1;
             width: 100%;
             background: linear-gradient(to right, $full-blue, $sea-blue);
