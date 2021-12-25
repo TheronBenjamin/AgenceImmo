@@ -14,20 +14,22 @@
         </div>
     {% endif %}
 
-    <div class="d-flex justify-content-center align-items-center flex-column mt-4">
-        <div class="d-flex justify-content-between align-items-center register-container">
-            <div class="register-text">
-                <h2 class="h2-form-title">Se connecter</h2>
-                <p>
-                    En vous inscrivant, vous reconnaissez avoir pris connaissance
-                    et acceptez nos <a href="">conditions générales d'utilisation</a>.
-
-                </p>
+    <div class="d-flex justify-content-center align-items-center flex-column mt-2">
+        <div class="d-flex w-75 justify-content-center align-items-center">
+            <div class="login-informations">
+                <img src="{{ asset('img/clef-en-main.jpg') }}" alt="">
+                <p>-> Accédez au dernières annonces en temps réel</p>
+                <p>-> Paramétrez vos recherches afin d'être avertis par mail</p>
+                <p>-> Retrouvez toutes vos annonces enregistrées en favoris</p>
             </div>
             <div class="register-form d-flex flex-column">
+                <div>
+                    <div class="circle"></div>
+                    <div class="logo">K</div>
+                </div>
                 <label class="ms-4" for="inputEmail">Email</label>
                 <input class="ms-4" type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" autocomplete="email" required autofocus>
-                <label class="ms-4" for="inputPassword">Password</label>
+                <label class="ms-4" for="inputPassword">Mot de passe</label>
                 <input class="ms-4" type="password" name="password" id="inputPassword" class="form-control" autocomplete="current-password" required>
 
                 <input type="hidden" name="_csrf_token"
@@ -50,8 +52,18 @@
                     Se connecter
                 </button>
             </div>
+            <div class="login-informations">
+                <img src="{{ asset('img/carton-emmenagement.jpg') }}" alt="">
+                <p>-> Contactez les vendeurs à partir des annonces sur Kenavo Immo</p>
+                <p>-> Visitez le bien qui vous intéresse</p>
+                <p>-> Signez, récupérez les clefs et commencez à préparer votre départ</p>
+            </div>
         </div>
-    </div>
-
+     </div>
 </form>
+    <style>
+        html,body {
+            background: rgba(21, 180, 251, 0.03);
+        }
+    </style>
 {% endblock %}
