@@ -9,6 +9,7 @@ $white: #ffffff;
 $flashy-green: #0fe56c;
 $flash-green: #13d266;
 $light-green: #19be26;
+$green-button: #3bc01d;
 $mid-light-green: #1aa657;
 $smooth-green: #1c833f;
 $medium-green: #1f733c;
@@ -438,7 +439,6 @@ html body{
             }
             .hidden-link{
                 text-align: center;
-                padding-top: -30px;
                 display: unset;
                 color: $white;
                 transition: display ease .5s;
@@ -632,12 +632,12 @@ html body{
         position: relative;
         display: flex;
         justify-content: center;
-        width: 320px;
+        width: 330px;
         background-color: $full-blue;
         margin: 3.9rem 0rem 4rem 0rem;
         padding: 4rem 0rem 2rem 0rem;
         box-shadow: 0px 1px 3px $light-grey;
-        border-radius: 10px;
+        border-radius: 6px;
         .background-login{
             background-color: $light-blue;
             height: 70px;
@@ -650,6 +650,7 @@ html body{
             color: $sea-blue;
             margin-top: -6.8rem;
             text-shadow: 2px 4px 2px $mid-light-blue;
+            animation:  moving-logo 2s ;
         }
         .circle{
             margin-top: -1.4rem;
@@ -662,6 +663,7 @@ html body{
             width: 100px;
             height: 100px;
             border-radius: 50%;
+            animation: moving-logo 1s ;
         }
         label{
             color: $light-blue;
@@ -670,7 +672,7 @@ html body{
         }
         input{
             width: 280px;
-            padding: 0.4rem 1rem 0.4rem 0rem;
+            padding: 0.4rem 1rem 0.4rem 1rem;
             border-radius: 20px;
             border : 1px solid $sand;
             outline-color: $clear-blue;
@@ -693,13 +695,13 @@ html body{
             margin-top: 1.5rem;
             margin-bottom: 2rem;
             padding: 0.4rem 1rem 0.4rem 1rem;
-            background-color: $white;
-            color: $mid-light-green;
-            border: 1px solid $light-green;
+            background-color: $full-blue;
+            color: $white;
+            border: 1px solid $mid-light-blue;
             border-radius: 40px;
             font-size: 1.1rem;
             font-weight: 400;
-            box-shadow: inset 0 0 0 0 $smooth-green;
+            box-shadow: inset 0 0 0 0 $mid-light-blue;
             transition: box-shadow ease-in .3s, color ease-in .4s;
             -webkit-transition: box-shadow ease-in .3s, color ease-in .4s;
             -moz-transition: box-shadow ease-in .3s, color ease-in .4s;
@@ -707,9 +709,9 @@ html body{
             -o-transition: box-shadow ease-in .3s, color ease-in .4s;
             &:hover{
                 color: $white;
-                box-shadow: inset 25vw 0 0 0 $light-green;
-                border: 1px solid $mid-light-green;
-                background-color: $white;
+                box-shadow: inset 25vw 0 0 0 $mid-light-blue;
+                border: 1px solid $clear-blue;
+                background-color: $sea-blue;
             }
             &:focus{
                 background-color: $medium-green;
@@ -805,6 +807,36 @@ html body{
         -o-transform: translateX(0%);
     }
 }
+
+@keyframes moving-logo{
+    0%{
+
+    }
+    50%{
+        transform: rotate(360deg)
+    }
+    100%{
+
+    }
+}
+
+@keyframes rotate-logo{
+    0%{
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(180deg);
+        -webkit-transform: translateX(30%);
+        -moz-transform: translateX(30%);
+        -ms-transform: translateX(30%);
+        -o-transform: translateX(30%);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+
 
 @keyframes color-logo{
     10%{
