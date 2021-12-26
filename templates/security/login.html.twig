@@ -13,20 +13,17 @@
             You are logged in as {{ app.user.username }}, <a href="{{ path('app_logout') }}">Logout</a>
         </div>
     {% endif %}
-
-    <div class="d-flex justify-content-center align-items-center flex-column mt-2">
-        <div class="d-flex w-75 justify-content-center align-items-center">
-            <div class="login-informations">
-                <img src="{{ asset('img/clef-en-main.jpg') }}" alt="">
-                <p>-> Accédez au dernières annonces en temps réel</p>
-                <p>-> Paramétrez vos recherches afin d'être avertis par mail</p>
-                <p>-> Retrouvez toutes vos annonces enregistrées en favoris</p>
-            </div>
+    <div class="inscription d-flex justify-content-center p-3">
+        <p class="me-2 mb-0">Vous n'avez pas encore de compte ?</p> <a href="">S'inscrire</a>
+    </div>
+    <div class="register-container">
+        <div class="d-flex justify-content-center align-items-center flex-column mt-2">
             <div class="register-form d-flex flex-column">
                 <div>
                     <div class="circle"></div>
                     <div class="logo">K</div>
                 </div>
+                <div class="background-login"></div>
                 <label class="ms-4" for="inputEmail">Email</label>
                 <input class="ms-4" type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" autocomplete="email" required autofocus>
                 <label class="ms-4" for="inputPassword">Mot de passe</label>
@@ -47,23 +44,37 @@
                 </div>
                 #}
                 <p class="ms-4">Se souvenir de moi</p>
-                <p class="ms-4">Mot de passe oublié ?</p>
+                <a href="" class="ms-4">Mot de passe oublié ?</a>
                 <button class="btn btn-lg btn-primary" type="submit">
                     Se connecter
                 </button>
             </div>
-            <div class="login-informations">
+        </div>
+        <div class="login-informations-block d-flex justify-content-center align-items-center">
+            <div class="login-informations d-flex">
+                <img src="{{ asset('img/clef-en-main.jpg') }}" alt="">
+                <div class="sentences d-flex flex-column justify-content-center mb-5">
+                    <p>-> Accédez au dernières annonces en temps réel</p>
+                    <p>-> Recevez par e-mail les annonces qui vous intéresse</p>
+                    <p>-> Enregitrez vos annonces en favoris</p>
+                </div>
+            </div>
+            <div class="login-informations d-flex">
                 <img src="{{ asset('img/carton-emmenagement.jpg') }}" alt="">
-                <p>-> Contactez les vendeurs à partir des annonces sur Kenavo Immo</p>
-                <p>-> Visitez le bien qui vous intéresse</p>
-                <p>-> Signez, récupérez les clefs et commencez à préparer votre départ</p>
+                <div class="sentences d-flex flex-column justify-content-center mb-5">
+                    <p>-> Contactez les vendeurs à partir des annonces</p>
+                    <p>-> Visitez le bien qui vous intéresse</p>
+                    <p>-> Envisagez un nouveau départ</p>
+                </div>
             </div>
         </div>
-     </div>
+    </div>
 </form>
+    {#
     <style>
         html,body {
             background: rgba(21, 180, 251, 0.03);
         }
     </style>
+    #}
 {% endblock %}
