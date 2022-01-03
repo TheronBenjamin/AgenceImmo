@@ -3,21 +3,23 @@
 {% block title %}S'inscrire {{ parent() }}{% endblock %}
 
 {% block body %}
-    <div class="d-flex justify-content-center align-items-center flex-column mt-4">
-        <div class="d-flex justify-content-between align-items-center register-container">
-            <div class="register-text">
-                <h2 class="h2-form-title">S'inscrire</h2>
-                <p>
-                    En vous inscrivant, vous reconnaissez avoir pris connaissance
-                    et acceptez nos <a href="">conditions générales d'utilisation</a>.
-
-                </p>
-            </div>
-            <div class="register-form">
-            {{ form_start(registrationForm) }}
-                {{ form_widget(registrationForm) }}
-                <button type="submit" class="btn btn-primary">S'enregistrer</button>
-            {{ form_end(registrationForm) }}
+    <div class="inscription d-flex justify-content-center p-3">
+        <p class="me-2 mb-0">Vous avez déjà un compte ?</p> <a href="{{ path('app_login') }}">Se connecter</a>
+    </div>
+    <div class="register-container">
+        <div class="d-flex justify-content-center align-items-center flex-column mt-2">
+            <div class="register-form d-flex flex-column">
+                <div>
+                    <div class="circle"></div>
+                    <div class="logo">K</div>
+                </div>
+                <div class="background-login"></div>
+                <div class="ms-4">
+                    {{ form_start(registrationForm) }}
+                        {{ form_widget(registrationForm) }}
+                        <button type="submit" class="ms-0 btn btn-lg btn-primary">S'enregistrer</button>
+                    {{ form_end(registrationForm) }}
+                </div>
             </div>
         </div>
     </div>
