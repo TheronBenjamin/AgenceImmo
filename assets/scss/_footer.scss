@@ -1,0 +1,104 @@
+/******************************/
+/*********** Footer ***********/
+/******************************/
+
+.footer{
+  position: relative;
+  background-color: $white;
+  color: $white;
+  //border-top: 1px ridge $clear-blue;
+  .border-footer{
+    padding: 3rem 2rem 0rem 2rem;
+    border-bottom: 1px ridge $clear-blue;
+    border-top: 1px ridge $mid-light-blue;
+
+  }
+  .logo{
+    position: relative;
+    font-size: 5.5rem;
+    text-align: center;
+    color: $sea-blue;
+    margin-top: -8.6rem;
+    text-shadow: 2px 4px 2px $mid-light-blue;
+  }
+  .circle{
+    margin-top: -.3rem;
+    position: relative ;
+    z-index: 0;
+    background: linear-gradient(to right, $light-blue, $full-blue);
+    padding: 3px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+  }
+  a{
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  hr{
+    color: $light-blue;
+  }
+  ul:last-child{
+    margin-bottom: 0;
+  }
+  h2, h3{
+    padding-left: 2rem;
+    font-size: .9rem;
+    font-weight: 300;
+    color: $mid-blue;
+    text-shadow: 0px 1px 1px $light-blue;
+    .underline{
+      position: relative;
+      max-width: 100%;
+      height: 3px;
+      background-color: $mid-blue;
+      border-radius: 3px;
+      margin-top: 6px;
+      overflow: hidden;
+      span{
+        position: absolute;
+        width: 10%;
+        height: 3px;
+        background: $light-blue;
+        border-radius: 3px;
+        animation: moving 2s ease-in-out infinite alternate;
+        transform: translateZ(0);
+        -webkit-transform: translateZ(0);
+        -moz-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        -o-transform: translateZ(0);
+      }
+    }
+  }
+  .border-style{
+    //border-bottom: 1px ridge $clear-blue;
+  }
+  p{
+    color: $mid-light-blue;
+    font-weight: 300;
+    font-size: .9rem;
+    text-shadow: 0px 0px 1px $light-blue;
+  }
+}
+
+/*********************************/
+/*********** KeyFrames ***********/
+/*********************************/
+
+@keyframes moving {
+  0%{
+    transform: translateX(-5px);
+    -webkit-transform: translateX(-5px);
+    -moz-transform: translateX(-5px);
+    -ms-transform: translateX(-5px);
+    -o-transform: translateX(-5px);
+  }
+  100%{
+    transform: translateX(940%);
+    -webkit-transform: translateX(940%);
+    -moz-transform: translateX(940%);
+    -ms-transform: translateX(940%);
+    -o-transform: translateX(940%);
+  }
+}

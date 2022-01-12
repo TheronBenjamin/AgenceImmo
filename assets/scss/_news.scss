@@ -1,0 +1,36 @@
+/****************************/
+/*********** News ***********/
+/****************************/
+
+.news{
+  h2{
+    color: $full-blue;
+  }
+  hr{
+    color: $full-blue;
+  }
+  .informations-block{
+    margin: 0rem 0rem 2rem 2rem;
+    img{
+      height: 200px;
+      max-width: 50%;
+      z-index: -4;
+    }
+    .block{
+      height: 200px;
+      z-index: 1;
+      width: 100%;
+      background: linear-gradient(to right, $full-blue, $sea-blue);
+      border-radius: 10px;
+      .questions{
+        width: 50%;
+        h3{
+          color: $white;
+          font-weight: 200;
+          font-size: 1.3rem;
+          padding: 2rem 2rem 0rem 2rem;
+        }
+      }
+    }
+  }
+}

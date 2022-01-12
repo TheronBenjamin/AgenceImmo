@@ -1,0 +1,193 @@
+/**********************************/
+/*********** Good cards ***********/
+/**********************************/
+
+
+.page-container{
+  width: 90vw;
+  margin-left:auto;
+  margin-right:auto;
+  .villa-group{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px,1fr));
+    grid-gap: 5px;
+    margin: 2rem 0rem 0rem 2rem;
+    transition: transform 0.5s;
+    transition-delay: 1ms;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -ms-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+    backface-visibility: hidden;
+    .good-type{
+      position: absolute;
+      top: 1vh;
+      z-index: 200;
+      backface-visibility: hidden;
+    }
+    .villa-card{
+      position: relative;
+      margin-bottom: 2.5rem;
+      box-shadow: 4px 4px 4px $mid-grey;
+      border-left: 1px solid $opaque-blue;
+      border-right: 1px solid $opaque-blue;
+      border-bottom: 1px solid $opaque-blue;
+      background-color: $white;
+      opacity: 0.93;
+      border-radius: 4px;
+      transition: transform 0.5s;
+      transition-delay: 1ms;
+      -webkit-transition: transform 0.5s;
+      -moz-transition: transform 0.5s;
+      -ms-transition: transform 0.5s;
+      -o-transition: transform 0.5s;
+      backface-visibility: hidden;
+      .informations{
+        color: black;
+        background-color: $white;
+        margin-bottom: 1.4rem;
+        transition: background-color ease-in 10s;
+        transition-delay: 1ms;
+        transition: transform 0.6s;
+        transition-delay: 1ms;
+        -webkit-transition: background-color ease-in 10s , transform 0.6s;
+        -moz-transition: background-color ease-in 10s , transform 0.6s;
+        -ms-transition: background-color ease-in 10s , transform 0.6s;
+        -o-transition: background-color ease-in 10s , transform 0.6s;
+        z-index:2;
+        backface-visibility: hidden;
+        p:first-child{
+          padding-top: 0.5rem;
+        }
+      }
+      .hidden-link{
+        text-align: center;
+        display: unset;
+        color: $white;
+        transition: display ease .5s;
+        transition-delay: 1ms;
+        -webkit-transition: display ease .5s;
+        -moz-transition: display ease .5s;
+        -ms-transition: display ease .5s;
+        -o-transition: display ease .5s;
+        backface-visibility: hidden;
+        a{
+          color: $white ;
+          text-decoration: none;
+          font-size: .9rem;
+        }
+        .discover-link{
+          display: block;
+          //margin-bottom: 1rem;
+          margin-top: -3.5rem;
+          padding: .7rem 0.7rem 0.7rem 0.7rem;
+          backface-visibility: hidden;
+          transition-delay: 1ms;
+        }
+      }
+      .ftw-bold {
+        font-weight: 300;
+      }
+      .text-blue{
+        background-color: $clear-blue;
+        color: $white;
+        padding: 0.1rem .7rem 0.1rem .7rem;
+        border-radius: 4px;
+        border: 1px solid $opaque-blue;
+      }
+      .text-green{
+        background-color: $mid-light-green;
+        color: $white;
+        padding: 0rem .7rem 0rem .7rem;
+        border-radius: 4px;
+        border: 1px solid $dark-opaque-green;
+      }
+      .text-brown{
+        background-color: $orange;
+        color: $white;
+        padding: 0.1rem .7rem 0.1rem .7rem;
+        border-radius: 4px;
+        border: 1px solid $opaque-orange;
+      }
+      .text-good-title{
+        font-size: .9rem;
+      }
+      hr {
+        color: $clear-blue;
+        z-index: 100;
+        width:  100%;
+        height: 2px;
+        margin: 0;
+      }
+      p{
+        font-size: 1rem;
+        margin-bottom: .5rem;
+        &:first-child{
+          font-size: 1rem;
+          font-weight: 500;
+        }
+        &:last-child{
+          font-size: 0.9rem;
+        }
+        .villa-icon{
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+    .villa-card:hover{
+      background: linear-gradient(to top, $sea-green 70%, $white 90%);
+      box-shadow: 1px 2px 7px $light-grey;
+      opacity: 0.999;
+      border-radius: 4px;
+      .hidden-link {
+        background: linear-gradient(to bottom, $mid-blue 97%, $sea-green  10%);
+        display: block;
+        border-radius: 4px;
+      }
+      .informations {
+        background-color: $white;
+        transition:transform 0.7s;
+        transition-delay: 1ms;
+        transition: background-color ease-out .1s;
+        transition-delay: 1ms;
+        -webkit-transition: background-color  ease-out .1s;-webkit-transition: transform 0.7s;
+        -moz-transition: background-color  ease-out .1s;-moz-transition: transform 0.7s;
+        -ms-transition: background-color  ease-out .1s; -ms-transition: transform 0.7s;
+        -o-transition: background-color  ease-out .1s; -o-transition: transform 0.7s;
+        transform: translateY(-18%);
+        transition-delay: 1ms;
+        -webkit-transform: translateY(-18%);
+        -moz-transform: translateY(-18%);
+        -ms-transform: translateY(-18%);
+        -o-transform: translateY(-18%);
+      }
+      .img-good{
+        transform: translateY(-2%);
+        transition-delay: 1ms;
+        -webkit-transform: translateY(-2%);
+        -moz-transform: translateY(-2%);
+        -ms-transform: translateY(-2%);
+        -o-transform: translateY(-2%);
+      }
+    }
+    .img-good {
+      width:  100%;
+      max-height: 235px;
+      min-height: 235px;
+      z-index: 1;
+      border-radius: 4px 4px 0 0;
+      transition: transform ease .5s;
+      transition-delay: 1ms;
+      -webkit-transition: transform ease .5s;
+      -moz-transition: transform ease .5s;
+      -ms-transition: transform ease .5s;
+      -o-transition: transform ease .5s;
+    }
+    .good-descritpion{
+      width: 90%;
+      text-align: justify;
+    }
+  }
+}
+

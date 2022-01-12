@@ -1,0 +1,50 @@
+/*************************************/
+/************* SearchBar *************/
+/*************************************/
+
+
+.search-and-sell{
+  margin-top: -1.7rem;
+  margin-bottom: 3rem;
+  input{
+    padding: .8rem;
+    min-width: 280px;
+    max-width: 14vw;
+    border: 1px solid $white;
+    border-right: 1px solid $light-grey;
+    outline-color: $clear-blue;
+    box-shadow: 3px 1px 10px 1px $light-grey;
+    border-radius: 1px;
+    &::placeholder{
+      color: $sea-blue;
+    }
+    &:first-child{
+    }
+    &:nth-child(3){
+      min-width: 200px;
+      max-width: 14vw;
+    }
+  }
+  button{
+    padding: .7rem;
+    min-width: 14vw;
+    font-size: 1.2rem;
+    color: $white;
+    background-color: $clear-blue;
+    outline-color: $clear-blue;
+    border: 1px solid $mid-blue;
+    border-radius: 1px;
+    box-shadow: inset 0 0 0 0 $clear-blue, 0px 3px 8px $light-grey;
+    transition: box-shadow ease-in .3s, color ease-in .3s;
+    -webkit-transition: box-shadow ease-in .3s, color ease-in .3s;
+    -moz-transition: box-shadow ease-in .3s, color ease-in .3s;
+    -ms-transition: box-shadow ease-in .3s, color ease-in .3s;
+    -o-transition: box-shadow ease-in .3s, color ease-in .3s;
+    &:hover{
+      color: $white;
+      box-shadow: inset 25vw 0 0 0 $mid-light-blue, 0px 3px 8px $light-grey;
+      background-color: $sea-blue;
+      border: 1px solid $mid-light-blue;
+    }
+  }
+}
