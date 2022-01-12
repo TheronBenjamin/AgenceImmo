@@ -54,7 +54,7 @@
 /*********************************************/
 
 .header-card{
-  min-height: 340px;
+  min-height: 360px;
   max-height: 100vh;
   background:  $sea-blue ;
   margin: 0;
@@ -76,7 +76,7 @@
     }
   }
   .logo{
-    font-size: 7.5rem;
+    font-size: 8rem;
     text-align: center;
     color: $sea-blue;
     text-shadow: 0px 2px 1px $white;
@@ -86,7 +86,7 @@
     .logo, .flag{
       position: relative;
       z-index: 2;
-      margin-top: -1.8rem;
+      margin-top: -1.6rem;
       animation: color-logo 3s ease-in-out;
       text-shadow: 2px 4px 2px $mid-light-blue;
     }
@@ -99,8 +99,8 @@
       z-index: 1;
       background: linear-gradient(to right, $light-blue, $mid-grey);
       padding: 3px;
-      width: 140px;
-      height: 140px;
+      width: 160px;
+      height: 160px;
       border-radius: 50%;
       animation: moving-circle 2s ease-in-out;
     }
@@ -132,8 +132,8 @@
     -o-transform: translateX(-200%);
   }
   100%{
-    width: 140px;
-    height: 140px;
+    width: 160px;
+    height: 160px;
     transform: translateX(0%);
     -webkit-transform: translateX(0%);
     -moz-transform: translateX(0%);
